@@ -44,12 +44,14 @@ export const Taskprovider = ({ children }) => {
         dispatch({
             type: "UPDATE",
             payload: {
-                task: updatedtask
+                tasks: updatedtask,
+                data: {}
             }
         })
     }
     const value = {
         taskList: state.taskList,
+        Task: state.Task,
         addtask,
         removetask,
         edittask,

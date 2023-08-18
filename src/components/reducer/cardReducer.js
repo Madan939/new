@@ -8,7 +8,7 @@ export const Taskreducer = (state, action) => {
         case 'EDIT_TASK':
             return { ...state, Task: payload.task }
         case 'UPDATE':
-            return { ...state, taskList: payload.task }
+            return { ...state, taskList: payload.tasks, Task: payload.data }
         default:
             return "case does not match"
     }
